@@ -436,6 +436,12 @@
 	}
 }
 
+@for $i from 1 through 4{
+	.kv#{$i}{
+		z-index: #{$i};
+	}
+}
+
 // scroll
 .scroll{
 	padding-right: 2px;
@@ -446,9 +452,10 @@
 	transform: translate(-50%, 0);
 	overflow: hidden;
 	pointer-events: none;
+	z-index: 2;
 
 	span{
-		// @include font-en;
+		width: 28px;
 		padding: 2px 5px 50px 0;
 		margin-left: 25px;
 		font-size: 1.1em;
